@@ -20,6 +20,11 @@ class CommonScenario {
     .exec(Actions.flights_page)
     .exec(Actions.flights_page1)
     .exec(Actions.flights_page2)
+    .exec(Actions.reserve_flight)
+    .exec(Actions.reserve_flight1)
+    .exec(Actions.reserve_flight_payment)
+    .exec(Actions.flights_page2)
+    .exec(Actions.flights_page2)
 
 
   //val loginGroup: ChainBuilder = group("my login"){

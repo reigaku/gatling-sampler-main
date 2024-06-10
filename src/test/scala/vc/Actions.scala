@@ -80,6 +80,27 @@ object Actions {
     .formParam("reserveFlights.x", "53")
     .formParam("reserveFlights.y", "9")
 
+  val reserve_flight_payment: HttpRequestBuilder = http("reserve_flight_payment")
+    .post("/cgi-bin/reservations.pl")
+    .formParam("outboundFlight", "#{flight_out_current}")
+    .formParam("firstName", "Anton")
+    .formParam("lastName", "Vlasov")
+    .formParam("address1", "Test 1")
+    .formParam("address2", "123456")
+    .formParam("pass1", "Anton Vlasov")
+    .formParam("creditCard", "123")
+    .formParam("expDate", "123")
+    .formParam("oldCCOption", "")
+    .formParam("numPassengers", "1")
+    .formParam("seatType", "Coach")
+    .formParam("seatPref", "None")
+    .formParam("advanceDiscount", "0")
+    .formParam("returnFlight", "")
+    .formParam("JSFormSubmit", "off")
+    .formParam("buyFlights.x", "66")
+    .formParam("buyFlights.y", "12")
+    .formParam(".cgifields", "saveCC")
+
 
 
 
