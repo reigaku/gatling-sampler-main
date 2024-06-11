@@ -12,8 +12,7 @@ object CommonScenario{
 class CommonScenario {
   val scn: ScenarioBuilder = scenario("Common scenario")
     .exec(Actions.getMainPage)
-  .exec(Actions.getMainPage1)
-  .exec(Actions.login)
+    .exec(Actions.getMainPage1)
     .exec(Actions.login)
     .exec(Actions.login1)
     .exec(Actions.login2)
@@ -25,6 +24,7 @@ class CommonScenario {
     .exec(Actions.reserve_flight_payment)
     .exec(Actions.flights_page2)
     .exec(Actions.flights_page2)
+    .exec(Actions.getMainPage)
 
 
   //val loginGroup: ChainBuilder = group("my login"){
